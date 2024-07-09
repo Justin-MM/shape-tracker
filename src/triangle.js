@@ -18,4 +18,8 @@ export function Triangle(side1, side2, side3) {
                 ((this.side1 !== this.side3) && ((this.side2 === this.side3)))
             );
     }
+
+    Triangle.prototype.isEquilateral = function () {
+        return ((this.side1 === this.side2) && (this.side1 === this.side3));
+    }
 }
