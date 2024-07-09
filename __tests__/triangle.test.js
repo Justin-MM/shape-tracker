@@ -18,4 +18,13 @@ describe('Triangle', () => {
         const scalTriangle = new Triangle(4, 5, 7)
         expect(scalTriangle.isScalene()).toEqual(true);
     });
+
+    test('should correctly determine whether three lengths make an isosceles triangle', () => {
+        const isoscTriangle = new Triangle(5, 5, 7)
+        const isoscTriangle2 = new Triangle(7, 5, 5);
+        const isoscTriangle3 = new Triangle(5, 7, 5);
+        expect(isoscTriangle.isIsosceles()).toEqual(true);
+        expect(isoscTriangle2.isIsosceles()).toEqual(true);
+        expect(isoscTriangle3.isIsosceles()).toEqual(true);
+    });
 });
