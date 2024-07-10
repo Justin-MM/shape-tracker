@@ -20,3 +20,15 @@ npm run start
 
 ```bash
 npm test
+
+## Live Site
+Link: https://justin-mm.github.io/shape-tracker/
+
+## Author
+[github/Justin-MM](https://github.com/Justin-MM)
+
+## License
+[MIT](https://choosealicense.com/licenses/mit/)
+
+## Copyright
+Copyright © 2024, [Justin Mwai](https://github.com/Justin-MM).
