@@ -9,6 +9,17 @@ module.exports={
     filename:'bundle.js',
     path: path.resolve(__dirname,'dist'),
   },
+  module: {
+    rules: [
+      {
+        test: /\.css$/,
+        use: [
+          'style-loader',
+          'css-loader'
+        ]
+      }
+    ]
+  },
   devtool:'eval-source-map',
   devServer:{
     static:{
@@ -16,7 +27,11 @@ module.exports={
     },
   },
   plugins:[
-    new HtmlWebpackPlugin(),
+    new HtmlWebpackPlugin({
+        title: 'Shape Tracker',
+        template: './src/index.html',
+        inject: 'body'
+      }),
     new ESLintPlugin(),// new line!
     new CleanWebpackPlugin(),
   ]
