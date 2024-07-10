@@ -20,6 +20,7 @@ npm run start
 
 ```bash
 npm test
+```
 
 ## Live Site
 Link: https://justin-mm.github.io/shape-tracker/
